@@ -1,0 +1,63 @@
+#include "coeur.c"    
+#include "param.h" 
+//Groupe 7
+//configuration de la facon dont sont allumer les LEDs 
+
+
+
+//une LED sur deux allumè 
+//*----------------------------------------------------------------------------------------------------------------------------------------------------*//
+
+
+
+void setup() {
+  // on definit les port ou s'ont relier les leds 
+pinMode(2,OUTPUT);// les led seront en sortie 
+pinMode(3,OUTPUT);
+pinMode(4,OUTPUT);
+pinMode(5,OUTPUT);
+pinMode(6,OUTPUT);
+pinMode(7,OUTPUT);
+pinMode(8,OUTPUT);
+pinMode(9,OUTPUT);
+pinMode(10,OUTPUT);
+pinMode (11,OUTPUT);
+digitalWrite(2,LOW);// les led seront ètainte en dèbut du programme pour plus de sècuritè car on ne sait pas dans quelle etat seront les LEDS au dèbut du programme 
+digitalWrite(3,LOW);
+digitalWrite(4,LOW);
+digitalWrite(5,LOW);
+digitalWrite(6,LOW);
+digitalWrite(7,LOW);
+digitalWrite(8,LOW);
+digitalWrite(9,LOW);
+digitalWrite(10,LOW);
+digitalWrite(11,LOW);
+
+}
+
+void loop() {
+ int paramettre = allumage;   switch (paramettre)
+  {
+  case 1: une_led_sur_deux();
+  break;    
+  case 2: une_led_sur_trois();
+  break;
+  case 3:chenille();
+  break;
+  case 4: chenille2();
+  break;
+  case 5: deux_chenille();
+  break;
+  case 6: toutes_les_leds();
+  break;
+  case 7: au_choix(ledOn);
+  break;
+  case 8:  optionelle1();
+  break;
+  case 9: optionelle2();
+  break;
+  default :
+  break;
+  }
+ 
+}
