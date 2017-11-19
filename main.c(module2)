@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "menu.h"           //Inclusion de bibliotheques
+#include "generationCode.h" //Inclusion de bibliotheques
+
+int main()
+{
+
+      printf("\n\t\t\t         ____________________________________");
+        printf("\n\t\t\t        /   Ali ramdani                     /");
+        printf("\n\t\t\t       /    Ikram Sereir                   / ");
+        printf("\n\t\t\t      /     Rafik Belkadi                 /  ");
+        printf("\n\t\t\t     /     Chanane Sara                  /   ");
+        printf("\n\t\t\t    /                       heXart      /    ");
+        printf("\n\t\t\t   /                        care       /     ");
+        printf("\n\t\t\t  /___________________________________/\n\n\n\n\n");
+
+    printf("\n bonjour!\n");
+
+    printf("\n*--------- menue de coeur---------\n");
+    Menu(); //Appel de fonction
+}
